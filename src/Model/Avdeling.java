@@ -1,5 +1,31 @@
 package Model;
 
-public class Avdeling {
+import javax.persistence.*;
+import java.util.List;
 
+@Entity
+public class Avdeling {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    private String navn;
+
+    @OneToOne
+    private Ansatt sjef;
+
+    @OneToMany(mappedBy = "avdeling")
+    private List<Ansatt> ansatte;
+
+    public Avdeling() {}
+
+    public Avdeling(String navn) {
+        this.navn = navn;
+    }
+
+    // Getters og Setters
+
+    public int getId() { return id; }
+    public String getNavn() { return navn; }
 }
+
