@@ -3,7 +3,7 @@ package Main;
 import Dao.*;
 import Model.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
@@ -13,8 +13,8 @@ public class App {
 
     public static void main(String[] args) {
         EntityManager em = emf.createEntityManager();
-        AnsattDAO ansattDAO = new AnsattDAO(em);
-        AvdelingDAO avdelingDAO = new AvdelingDAO(em);
+        AnsattDao ansattDAO = new AnsattDao(em);
+        AvdelingDao avdelingDAO = new AvdelingDao(em);
 
         Scanner scanner = new Scanner(System.in);
         while (true) {

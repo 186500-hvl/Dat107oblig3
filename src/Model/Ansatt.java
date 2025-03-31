@@ -1,6 +1,6 @@
 package Model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
@@ -32,9 +32,23 @@ public class Ansatt {
         this.manedslonn = manedslonn;
         this.avdeling = avdeling;
     }
+    
+    public void setManedslonn(double manedslonn) {
+    	this.manedslonn = manedslonn;
+    }
+    
+    public double getManedslonn() {
+    	return manedslonn;
+    }
 
-    // Getters og Setters
-
+    public void setStilling(String stilling) {
+    	this.stilling = stilling;
+    }
+    
+    public String getStilling() {
+    	return this.stilling;
+    }
+    
     public void skrivUt() {
         System.out.printf("Ansatt #%d: %s %s (%s), Stilling: %s, Lønn: %.2f%n", id, fornavn, etternavn, brukernavn, stilling, manedslonn);
     }

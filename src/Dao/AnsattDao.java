@@ -2,7 +2,7 @@ package Dao;
 
 import Model.Ansatt;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 public class AnsattDao {

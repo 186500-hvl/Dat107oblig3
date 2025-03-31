@@ -1,13 +1,13 @@
 package Dao;
 
-import model.Avdeling;
+import Model.Avdeling;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
-public class AvdelingDAO {
+public class AvdelingDao {
     private EntityManager em;
 
-    public AvdelingDAO(EntityManager em) {
+    public AvdelingDao(EntityManager em) {
         this.em = em;
     }
 
