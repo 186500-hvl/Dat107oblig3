@@ -1,5 +1,7 @@
-import dao.*;
-import model.*;
+package Main;
+
+import Dao.*;
+import Model.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;

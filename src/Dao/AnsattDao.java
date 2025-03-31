@@ -1,6 +1,6 @@
 package Dao;
 
-import model.Ansatt;
+import Model.Ansatt;
 
 import javax.persistence.*;
 import java.util.List;
