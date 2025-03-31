@@ -10,11 +10,11 @@
 		<class>Model.Avdeling</class>
 
 		<properties>
-			
 			<property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-			<property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://ider-database.westeurope.cloudapp.azure.com:5433/h580809" />		
-			<property name="jakarta.persistence.jdbc.user" value="h580809" />
+			<property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://ider-database.westeurope.cloudapp.azure.com:5433/h186500" />		
+			<property name="jakarta.persistence.jdbc.user" value="h186500" />
 			<property name="jakarta.persistence.jdbc.password" value="blåSky58" />
+			
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />	
 			<property name="hibernate.show_sql" value="true" />
@@ -22,3 +22,4 @@
 
 	</persistence-unit>
 </persistence>
+

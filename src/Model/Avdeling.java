@@ -18,6 +18,7 @@ public class Avdeling {
     private List<Ansatt> ansatte;
 
     public Avdeling() {}
+    
 
     public Avdeling(String navn) {
         this.navn = navn;
